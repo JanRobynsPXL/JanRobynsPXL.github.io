@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <a class="navbar-brand masthead-brand" [routerLink]="['/home']">I-Talent</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a [routerLink]="['/home']" [routerLinkActive]="['active']" class="nav-link">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/activiteiten']" [routerLinkActive]="['active']" class="nav-link">Activiteiten</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/cv']" [routerLinkActive]="['active']" class="nav-link">CV</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/reflectie']" [routerLinkActive]="['active']" class="nav-link">Reflectie</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

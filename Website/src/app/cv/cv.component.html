@@ -1,0 +1,99 @@
+<body class="card-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <img src="assets/CV_foto.jpg" height="350px" width="250px" alt="Photo of me">
+      </div>
+      <div class="col-sm">
+        <h1>Jan Robyns</h1>
+        <p><b>Age:</b> {{age}}</p>
+        <p><b>Date of Birth:</b> 23/10/2000</p>
+        <p><b>Email:</b> jan.robyns@hotmail.com</p>
+        <p><b>Gender:</b> Male</p>
+        <a href="https://www.facebook.com/jan.robyns"> <img src="assets/facebook.webp" width="40px" height="40px"></a>
+        <a href="https://github.com/JanRobynsPXL"> <img src="assets/github.png" width="30px" height="30px"></a>
+        <a href="https://www.linkedin.com/in/jan-robyns-b089911a1/"> <img src="assets/linkedin.webp" width="35px" height="35px"></a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg">
+        <h2>❓ About me</h2>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <p>{{description}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <h2>📖 Education and training</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg">
+        <p>Lummen enzo</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <h2>🗣️ Language Skills</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row" *ngFor="let language of languages">
+      <div class="col-md">
+        <p><b>{{language.name | flags}}</b></p>
+      </div>
+      <div class="col-md">
+        <p>Efficiency: {{language.proficiancy}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <h2>💻 Digital Skills</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row" *ngFor="let skills of digitalskills">
+      <div class="col-md">
+        <p><b>{{skills.skillname}}</b></p>
+      </div>
+      <div class="col-md">
+        <p>Efficiency: {{skills.skillamount | stars}}</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg">
+        <h2>🎹 Hobbies and interests</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg">
+        <p>Uitleg over mijn gekke hobbies</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <h2>🤝 Socials</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg">
+        <p>Uitleggen hoe ik sociaal incapabel ben</p>
+      </div>
+    </div>
+  </div>
+</body>
