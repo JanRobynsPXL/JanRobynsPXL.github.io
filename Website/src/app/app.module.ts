@@ -13,6 +13,7 @@ import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InmemorydataService} from './Shared/inmemorydata.service';
 import { StarsPipe } from './pipes/stars.pipe';
 import { FlagsPipe } from './pipes/flags.pipe';
+import { LijstVanActiviteitenComponent } from './lijst-van-activiteiten/lijst-van-activiteiten.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FlagsPipe } from './pipes/flags.pipe';
     ReflectieComponent,
     ErrorComponent,
     StarsPipe,
-    FlagsPipe
+    FlagsPipe,
+    LijstVanActiviteitenComponent
   ],
   imports: [
     BrowserModule,
