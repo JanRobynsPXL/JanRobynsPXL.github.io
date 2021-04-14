@@ -1,1 +1,71 @@
-<p>lijst-van-activiteiten works!</p>
+<div class="card-body">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg">
+        <h2>Seminaries</h2>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row" *ngFor="let seminarie of seminaries">
+      <div class="col-sm">
+        <p><b>{{seminarie.title}}</b></p>
+      </div>
+      <div class="col-sm">
+        <p>{{seminarie.omschrijving}}</p>
+      </div>
+      <div class="col-sm">
+        <p>{{seminarie.locatie}}</p>
+      </div>
+      <div class="col-sm">
+        <p>{{seminarie.tijdspanne}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <h2>Innovatieroutes</h2>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row" *ngFor="let innovatie of innovaties">
+      <div class="col-sm">
+        <p><b>{{innovatie.title}}</b></p>
+      </div>
+      <div class="col-sm">
+        <p>{{innovatie.omschrijving}}</p>
+      </div>
+      <div class="col-sm">
+        <p>{{innovatie.locatie}}</p>
+      </div>
+      <div class="col-sm">
+        <p>{{innovatie.tijdspanne}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <h2>Persoonlijke ontwikkeling</h2>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row" *ngFor="let activiteit of persoonlijk">
+      <div class="col-sm">
+        <p><b>{{activiteit.title}}</b></p>
+      </div>
+      <div class="col-sm">
+        <p>{{activiteit.omschrijving}}</p>
+      </div>
+      <div class="col-sm">
+        <p>{{activiteit.locatie}}</p>
+      </div>
+      <div class="col-sm">
+        <p>{{activiteit.tijdspanne}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>

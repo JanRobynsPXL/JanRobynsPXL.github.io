@@ -3,7 +3,6 @@ export class DigitalSkill{
   skillname: string;
   skillamount: number;
 
-
   constructor(id: number, skillname: string, skillamount: number) {
     this.id = id;
     this.skillname = skillname;

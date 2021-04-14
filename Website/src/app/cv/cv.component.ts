@@ -34,14 +34,12 @@ export class CvComponent implements OnInit {
   getDigitalSkills(){
     this.service.getDigitalSkills().subscribe(data => {
       this.digitalskills = data;
-      console.log(data)
     });
   }
 
   getLanguages(){
     this.service.getLanguage().subscribe(data => {
       this.languages = data;
-      console.log(data)
     });
   }
 
