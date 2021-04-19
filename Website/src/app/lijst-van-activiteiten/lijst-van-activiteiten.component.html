@@ -1,71 +1,43 @@
-<div class="card-body">
+<div>
   <div class="container">
 
-    <div class="row">
-      <div class="col-lg">
-        <h2>Seminaries</h2>
-        <hr>
+    <div class="card text-center">
+      <div class="card-header">
+        <h2 style="margin: 0">Seminaries</h2>
+      </div>
+      <div class="list-group list-group-flush" *ngFor="let seminarie of seminaries">
+        <h5 class="card-title" style="background-color: #41A43B43;"><b>{{seminarie.title}}</b></h5>
+        <p class="card-text">{{seminarie.omschrijving}}</p>
+        <p class="card-text">Locatie: {{seminarie.locatie}}</p>
+        <p class="card-text">{{seminarie.tijdspanne}}</p>
+        <br/>
       </div>
     </div>
 
-    <div class="row" *ngFor="let seminarie of seminaries">
-      <div class="col-sm">
-        <p><b>{{seminarie.title}}</b></p>
+    <div class="card text-center">
+      <div class="card-header">
+        <h2 style="margin: 0">Innovatieroutes</h2>
       </div>
-      <div class="col-sm">
-        <p>{{seminarie.omschrijving}}</p>
-      </div>
-      <div class="col-sm">
-        <p>{{seminarie.locatie}}</p>
-      </div>
-      <div class="col-sm">
-        <p>{{seminarie.tijdspanne}}</p>
+      <div class="list-group list-group-flush" *ngFor="let innovatie of innovaties">
+        <h5 class="card-title" style="background-color: #41A43B43;"><b>{{innovatie.title}}</b></h5>
+        <p class="card-text">{{innovatie.omschrijving}}</p>
+        <p class="card-text">Locatie: {{innovatie.locatie}}</p>
+        <p class="card-text">{{innovatie.tijdspanne}}</p>
+        <br/>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg">
-        <h2>Innovatieroutes</h2>
-        <hr>
+    <div class="card text-center">
+      <div class="card-header">
+        <h2 style="margin: 0">Persoonlijke Ontwikkeling</h2>
+      </div>
+      <div class="list-group list-group-flush" *ngFor="let activiteit of persoonlijk">
+        <h5 class="card-title" style="background-color: #41A43B43;"><b>{{activiteit.title}}</b></h5>
+        <p class="card-text">{{activiteit.omschrijving}}</p>
+        <p class="card-text">Locatie: {{activiteit.locatie}}</p>
+        <p class="card-text">{{activiteit.tijdspanne}}</p>
+        <br/>
       </div>
     </div>
-
-    <div class="row" *ngFor="let innovatie of innovaties">
-      <div class="col-sm">
-        <p><b>{{innovatie.title}}</b></p>
-      </div>
-      <div class="col-sm">
-        <p>{{innovatie.omschrijving}}</p>
-      </div>
-      <div class="col-sm">
-        <p>{{innovatie.locatie}}</p>
-      </div>
-      <div class="col-sm">
-        <p>{{innovatie.tijdspanne}}</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg">
-        <h2>Persoonlijke ontwikkeling</h2>
-        <hr>
-      </div>
-    </div>
-
-    <div class="row" *ngFor="let activiteit of persoonlijk">
-      <div class="col-sm">
-        <p><b>{{activiteit.title}}</b></p>
-      </div>
-      <div class="col-sm">
-        <p>{{activiteit.omschrijving}}</p>
-      </div>
-      <div class="col-sm">
-        <p>{{activiteit.locatie}}</p>
-      </div>
-      <div class="col-sm">
-        <p>{{activiteit.tijdspanne}}</p>
-      </div>
-    </div>
-
   </div>
 </div>

@@ -73,6 +73,11 @@ export class InmemorydataService implements InMemoryDbService{
         omschrijving: 'Een sessie rond geconcentreerd werken in een IT-omgeving',
         locatie: 'Gebouw B – B341',
         tijdspanne: '03/03/2020 – 2 uur'
+      },
+      {title: 'Development van deze website',
+        omschrijving: 'Het maken van deze website aan de hand van Angular 8 en Bootstrap',
+        locatie: 'Online',
+        tijdspanne: 'Maart 2021 – Mei 2021'
       }
     ]
     return {digital_skill, language, seminarie, innovatie, persoonlijk}
