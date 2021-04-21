@@ -7,12 +7,14 @@ export class InmemorydataService implements InMemoryDbService{
     const digital_skill = [
       { id: 1, skillname: 'Python', skillamount:'5'},
       { id: 2, skillname: 'Angular', skillamount:'4.5'},
-      { id: 3, skillname: 'MySQL/SQL Server', skillamount:'4.5'},
+      { id: 3, skillname: 'MySQL/SQL Server', skillamount:'4'},
       { id: 4, skillname: '.NET', skillamount:'4'},
       { id: 5, skillname: 'Java', skillamount:'4'},
       { id: 6, skillname: 'HTML/CSS', skillamount:'4'},
-      { id: 7, skillname: 'Javascript', skillamount:'3.5'},
-      { id: 8, skillname: 'Bootstrap', skillamount:'3'}
+      { id: 7, skillname: 'Keras', skillamount:'3'},
+      { id: 8, skillname: 'FastAI', skillamount:'3'},
+      { id: 9, skillname: 'Javascript', skillamount:'3'},
+      { id: 10, skillname: 'Bootstrap', skillamount:'3'}
     ];
 
     const language = [
@@ -77,7 +79,7 @@ export class InmemorydataService implements InMemoryDbService{
       {title: 'Development van deze website',
         omschrijving: 'Het maken van deze website aan de hand van Angular 8 en Bootstrap',
         locatie: 'Online',
-        tijdspanne: 'Maart 2021 – Mei 2021'
+        tijdspanne: 'Maart 2021 – April 2021'
       }
     ]
     return {digital_skill, language, seminarie, innovatie, persoonlijk}
