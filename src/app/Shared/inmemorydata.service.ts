@@ -4,6 +4,8 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 @Injectable()
 export class InmemorydataService implements InMemoryDbService{
   createDb(){
+
+    // CV Skills
     const digital_skill = [
       { id: 1, skillname: 'Python', skillamount:'5'},
       { id: 2, skillname: 'Angular', skillamount:'4.5'},
@@ -24,6 +26,43 @@ export class InmemorydataService implements InMemoryDbService{
       { name: 'German', proficiancy: 'Basic' }
     ]
 
+    const education = [
+      {
+        institution: 'University College PXL',
+        education: 'Professional bachelor in applied information technology with specialization in AI & Robotics',
+        start_date: 'September 2018',
+        end_date: 'June 2021'
+      },
+      {
+        institution: 'Spectrum College OHVM Lummen',
+        education: 'Mathematics Sciences',
+        start_date: 'September 2012',
+        end_date: 'June 2018'
+      },
+      {
+        institution: 'Music Academy Beringen',
+        education: 'Degree in music with specialization in piano',
+        start_date: 'September 2009',
+        end_date: 'June 2018'
+      }
+    ]
+
+    const socials = [
+      {
+        title: 'Voluntary work in youth club NYX Lummen',
+        description: 'Serving drinks to customers. Cleaning up after work hours. Keeping maintenance in the building.',
+        start_date: 'September 2018',
+        end_date: 'Present'
+      },
+      {
+        title: 'Voluntary work with an IT function within the student fraternity Hexion',
+        description: 'Maintaining the website of the fraternity. Helping with organising events.',
+        start_date: 'September 2019',
+        end_date: 'September 2020'
+      }
+    ]
+
+    // Activities
     const seminarie = [
       {title: 'Basis Agile workshop by Eurofins',
         omschrijving: 'In de workshop worden de basisprincipes van Agile en scrum aangeleerd. Hierna worden de theoretische aspecten hiervan omgezet naar een praktische setting',
@@ -82,7 +121,9 @@ export class InmemorydataService implements InMemoryDbService{
         tijdspanne: 'Maart 2021 – April 2021'
       }
     ]
-    return {digital_skill, language, seminarie, innovatie, persoonlijk}
+
+
+    return {digital_skill, language, seminarie, innovatie, persoonlijk, education, socials}
   }
 
   genId(digital_skill: any[]): number {

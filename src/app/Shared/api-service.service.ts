@@ -3,6 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {DigitalSkill} from '../models/DigitalSkill';
 import {Language} from '../models/Language';
 import {Activiteit} from "../models/Activiteit";
+import {Education} from "../models/Education";
+import {Socials} from "../models/Socials";
 
 @Injectable({
   providedIn: 'root'
@@ -29,6 +31,14 @@ export class ApiServiceService {
 
   getPersoonlijk(){
     return this.http.get<Activiteit[]>('api/persoonlijk')
+  }
+
+  getEducation(){
+    return this.http.get<Education[]>('api/education')
+  }
+
+  getSocials(){
+    return this.http.get<Socials[]>('api/socials')
   }
 }
 

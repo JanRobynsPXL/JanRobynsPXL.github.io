@@ -36,9 +36,11 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" *ngFor="let education of educations">
       <div class="col-lg">
-        <p>Lummen enzo</p>
+        <p style="margin-bottom: 0"><b>{{education.institution}}</b></p>
+        <p class="text-muted" style="margin-bottom: 0">{{education.start_date}} - {{education.end_date}}</p>
+        <p>{{education.education}}</p>
       </div>
     </div>
 
@@ -81,7 +83,8 @@
     </div>
     <div class="row">
       <div class="col-lg">
-        <p>Uitleg over mijn gekke hobbies</p>
+        <p>My main interests are within the field of IT. In my free time I like to play videogames and spend time with my friends. If I'm not doing either of these things,
+        I am playing guitar or piano.</p>
       </div>
     </div>
 
@@ -91,9 +94,11 @@
         <hr>
       </div>
     </div>
-    <div class="row">
+    <div class="row" *ngFor="let social of socials">
       <div class="col-lg">
-        <p>Uitleggen hoe ik sociaal incapabel ben</p>
+        <p style="margin-bottom: 0"><b>{{social.title}}</b></p>
+        <p class="text-muted" style="margin-bottom: 0">{{social.start_date}} - {{social.end_date}}</p>
+        <p>{{social.description}}</p>
       </div>
     </div>
   </div>

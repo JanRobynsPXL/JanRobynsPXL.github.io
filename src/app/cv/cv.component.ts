@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {ApiServiceService} from '../Shared/api-service.service';
 import {DigitalSkill} from '../models/DigitalSkill';
 import {Language} from '../models/Language';
+import {Education} from "../models/Education";
+import {Socials} from "../models/Socials";
 
 @Component({
   selector: 'app-cv',
@@ -15,6 +17,8 @@ export class CvComponent implements OnInit {
   digitalskills: DigitalSkill[];
   languages: Language[];
   description: string;
+  educations: Education[];
+  socials: Socials[];
 
   constructor(private service: ApiServiceService) { }
 
@@ -23,6 +27,8 @@ export class CvComponent implements OnInit {
     this.calculateAge();
     this.getDigitalSkills();
     this.getLanguages();
+    this.getEducation();
+    this.getSocials();
     this.setDescription();
   }
 
@@ -40,6 +46,18 @@ export class CvComponent implements OnInit {
   getLanguages(){
     this.service.getLanguage().subscribe(data => {
       this.languages = data;
+    });
+  }
+
+  getEducation(){
+    this.service.getEducation().subscribe(data => {
+      this.educations = data;
+    });
+  }
+
+  getSocials(){
+    this.service.getSocials().subscribe(data => {
+      this.socials = data;
     });
   }
 
