@@ -24,7 +24,6 @@ export class LijstVanActiviteitenComponent implements OnInit {
   getSeminaries(){
     this.service.getSeminarie().subscribe(data => {
       this.seminaries = data;
-      console.log(data);
     });
   }
 

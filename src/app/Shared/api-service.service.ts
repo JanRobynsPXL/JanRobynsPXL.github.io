@@ -5,6 +5,7 @@ import {Language} from '../models/Language';
 import {Activiteit} from "../models/Activiteit";
 import {Education} from "../models/Education";
 import {Socials} from "../models/Socials";
+import {Talent} from '../models/Talent';
 
 @Injectable({
   providedIn: 'root'
@@ -39,6 +40,10 @@ export class ApiServiceService {
 
   getSocials(){
     return this.http.get<Socials[]>('api/socials')
+  }
+
+  getTalents(){
+    return this.http.get<Talent[]>('api/talents')
   }
 }
 

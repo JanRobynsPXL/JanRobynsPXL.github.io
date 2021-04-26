@@ -1,1 +1,27 @@
-<p>reflectie works!</p>
+<div style="margin: 50px">
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h2 style="margin: 0">Persoonlijke Reflectie</h2>
+      </div>
+      <div class="card-body">
+        Als persoon ben ik enorm gegroeid over de laatste drie jaren. Ik ben begonnen aan hogeschool PXL als een introverte jongen die geen voorkennis had over informatica en programmeren. Ik heb over diverse programmeertalen geleerd, kennis over researchen en AI opgedaan en het belangrijkste van al, mijn softskills kunnen ontwikkelen. Nu studeer ik af als een sociale en betrouwbare collega in een team met IT’ers. Ik ga echter blijven doorzetten en mijn kennis blijven ontwikkelen door verder te studeren. Ook na het studeren zal ik bij mijn bedrijven cursussen blijven volgen om mijn domein van kennis uit te breiden.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3 style="margin: 0">Hoe plaats ik mezelf in de X-factor?</h3>
+      </div>
+      <div class="text-center card-img" style="margin-left: 20px">
+        <img src="assets/XFactor.jpg" alt="de x-factor" width="410px" height="307px"/>
+      </div>
+      <p>Tot slot kan ik zeggen dat ik de X-factor van PXL heb. Door de vele vakken die ik gehad heb, kan ik de vier pilaren van de X-factor toepassen.</p>
+      <div *ngFor="let talent of talenten">
+        <p style="margin-bottom: 0px;"><b>{{talent.title}}</b></p>
+        <p>{{talent.description}}</p>
+      </div>
+
+    </div>
+  </div>
+</div>

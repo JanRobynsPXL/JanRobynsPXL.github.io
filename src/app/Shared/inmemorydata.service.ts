@@ -115,15 +115,39 @@ export class InmemorydataService implements InMemoryDbService{
         locatie: 'Gebouw B – B341',
         tijdspanne: '03/03/2020 – 2 uur'
       },
-      {title: 'Development van deze website',
-        omschrijving: 'Het maken van deze website aan de hand van Angular 8 en Bootstrap',
-        locatie: 'Online',
-        tijdspanne: 'Maart 2021 – April 2021'
+      {title: 'POP-sessie: Feedback: the key to improvement',
+        omschrijving: 'Een sessie over hoe een persoon goede feedback kan geven en hoe het voordelig kan uitdraaien.',
+        locatie: 'Gebouw B, PXL',
+        tijdspanne: '12/02/2020 – 2 uur'
+      },
+      {title: 'Projectweek 2019 – 2020',
+        omschrijving: 'Een week van teambuilding om de student voor te bereiden voor hun eerste grote groepswerk',
+        locatie: 'PXL',
+        tijdspanne: '10/02/2020 – 14/02/2020'
       }
     ]
 
+    const talents = [
+      {
+        title:'Empassie:',
+        description:'Dankzij de projecten van PXL, kan mij inleven in de situatie van een collega en hem/haar verder helpen als dit nodig is.'
+      },
+      {
+        title:'Ondernemen & innovatief:',
+        description:'Ik durf een risico te nemen in de projecten die ik opstel. Ik neem dan ook mijn verantwoordelijkheid op voor deze risico’s.'
+      },
+      {
+        title:'(internationaal) samen(net)werking:',
+        description:'Dankzij mijn stage heb ik regionaal mijn connecties buiten PXL kunnen verbreden.'
+      },
+      {
+        title:'Multi- & disciplinariteit:',
+        description:'Dankzij PXL heb ik in een project kunnen opzetten in samenwerking met de Electronika-ICT-richting van PXL. Hierbij had ik hun raad nodig om alles naar hun wensen te configureren.'
+      },
+    ]
 
-    return {digital_skill, language, seminarie, innovatie, persoonlijk, education, socials}
+
+    return {digital_skill, language, seminarie, innovatie, persoonlijk, education, socials, talents}
   }
 
   genId(digital_skill: any[]): number {
