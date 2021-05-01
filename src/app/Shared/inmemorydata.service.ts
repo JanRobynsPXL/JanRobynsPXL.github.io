@@ -130,19 +130,19 @@ export class InmemorydataService implements InMemoryDbService{
     const talents = [
       {
         title:'Empassie:',
-        description:'Dankzij de projecten van PXL, kan mij inleven in de situatie van een collega en hem/haar verder helpen als dit nodig is.'
+        description: 'Na drie serieuze projecten en een paar seminaries, kan ik zeggen dat ik mij kan en durf in een teamverband te werken en dat ik empatie toon bij mijn collega’s en hun situaties. Mijn introvertheid van vroeger is weg en heeft plaats gemaakt voor iemand die aan doel wilt werken en het wilt bereiken. Niet alleen, maar door iedereen over de streep te krijgen. '
       },
       {
         title:'Ondernemen & innovatief:',
-        description:'Ik durf een risico te nemen in de projecten die ik opstel. Ik neem dan ook mijn verantwoordelijkheid op voor deze risico’s.'
+        description:'Door deze drie serieuze jaren heb ik geleerd om risico’s in te schatten en verantwoordelijkheid op te nemen. Vroeger kwam dit niet eens in opspraak omdat ik te intovert en te afwezig was binnen groepsgebeuren. Ik durf een leidersrol op te nemen en alle risico’s hiervan op te nemen.'
       },
       {
         title:'(internationaal) samen(net)werking:',
-        description:'Dankzij mijn stage heb ik regionaal mijn connecties buiten PXL kunnen verbreden.'
+        description:'In het kader van internationale samenwerking ben ik beperkt geweest door de coronapandemie. Dit hield mij echter niet tegen om met de stage mijn grenzen te verleggen. Zo ben ik regionaal bekender geworden binnen Hasselt en kijk ik ernaar uit mijn grenzen internationaal te verleggen.'
       },
       {
         title:'Multi- & disciplinariteit:',
-        description:'Dankzij PXL heb ik in een project kunnen opzetten in samenwerking met de Electronika-ICT-richting van PXL. Hierbij had ik hun raad nodig om alles naar hun wensen te configureren.'
+        description:'Het is belangrijk om van andere mensen te leren. Ik kan me inleven in andere vakken waar ik minder kennis van heb, maar toch iets succesvol wil van maken. Dit is van toepassing geweest bij het IT-project. Hierbij moest ik rekening houden en communiceren met het Elektronica-ICT departement van PXL zodat het project goed werd afgerond.'
       },
     ]
 
