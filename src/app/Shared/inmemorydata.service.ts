@@ -93,7 +93,7 @@ export class InmemorydataService implements InMemoryDbService{
         tijdspanne: '08/10/2020 – 8 uur, 09/10/2020 – 4 uur'
       },
       {title: 'Google Hash code',
-        omschrijving: 'Een hackathon georganiseerd door die wereldwijd werd georganiseerd',
+        omschrijving: 'Een hackathon door Google georganiseerd die wereldwijd doorging',
         locatie: 'Online',
         tijdspanne: '25/02/2021 – 25 uur'
       }
