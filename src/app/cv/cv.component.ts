@@ -34,7 +34,7 @@ export class CvComponent implements OnInit {
 
   calculateAge(): number {
     let timeDiff = Math.abs(Date.now() - this.birthdate.getTime());
-    return this.age = Math.floor(timeDiff/(1000 * 3600 * 24) / 365.25);
+    return this.age = Math.floor((timeDiff/(1000 * 3600 * 24)) / 365);
   }
 
   getDigitalSkills(){
