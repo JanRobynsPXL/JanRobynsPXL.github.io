@@ -33,7 +33,7 @@ export class CvComponent implements OnInit {
   }
 
   calculateAge(): number {
-    let timeDiff = Math.abs(Date.now() - new Date(this.birthdate).getTime());
+    let timeDiff = Math.abs(Date.now() - this.birthdate.getTime());
     return this.age = Math.floor(timeDiff/(1000 * 3600 * 24) / 365.25);
   }
 
